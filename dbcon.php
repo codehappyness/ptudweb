@@ -6,10 +6,10 @@ error_reporting(E_ALL);
 
 $servername = "localhost";
 $dbuser = "ptudweb";
-$dbpassword = "ptudweb@7979";
+$dbpassword = "MatKhauManh123";
 $dbname = "ptudwebdb";
 
-$conn = mysqli_connect($servername, $dbname, $dbpassword, $dbname);
+$conn = mysqli_connect($servername, $dbuser, $dbpassword, $dbname);
 
 if(!$conn){
   die('Connection failed'.mysqli_connect_error());
