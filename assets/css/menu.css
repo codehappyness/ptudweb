@@ -1,0 +1,118 @@
+
+    :root {
+      --pg-red: #9E2525;
+      --pg-red-hover: #b52b2b;
+      --pg-yellow: #FBD84C;
+      --pg-text-dark: #600;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    /* ===== TOP BAR ===== */
+    .pg-topbar {
+      background: var(--pg-yellow);
+      font-size: 14px;
+    }
+
+    .pg-topbar a {
+      color: var(--pg-text-dark);
+      text-decoration: none;
+    }
+
+    /* SEARCH */
+    .pg-search input {
+      height: 32px;
+      border-radius: 4px 0 0 4px;
+      border: 1px solid var(--pg-red);
+    }
+
+    .pg-search button {
+      background: var(--pg-red);
+      color: #fff;
+      border: none;
+      padding: 0 12px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    /* ===== NAVBAR ===== */
+    .pg-navbar {
+      background: var(--pg-red);
+    }
+
+    .pg-navbar .navbar-brand img {
+      height: 80px;
+    }
+
+    .pg-navbar .nav-link {
+      color: #fff !important;
+      font-weight: 600;
+      padding: 1rem 1.2rem;
+      text-transform: uppercase;
+    }
+
+    .pg-navbar .nav-link:hover,
+    .pg-navbar .nav-link.active {
+      background: var(--pg-yellow);
+      color: var(--pg-text-dark) !important;
+    }
+
+    /* ===== DROPDOWN ===== */
+    .dropdown-menu {
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, .15);
+    }
+
+    .dropdown-item {
+      padding: 10px 18px;
+      font-weight: 500;
+      color: var(--pg-text-dark);
+    }
+
+    .dropdown-item:hover {
+      background: var(--pg-yellow);
+      color: var(--pg-text-dark);
+    }
+
+    /* ===== MENU CẤP 3 ===== */
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-left: 0;
+      display: none;
+    }
+
+    /* Mũi tên submenu */
+    .dropdown-submenu>a::after {
+      content: "›";
+      float: right;
+      font-size: 18px;
+      margin-left: 10px;
+    }
+
+    /* Hover desktop */
+    @media (min-width: 992px) {
+      .pg-dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 991px) {
+      .pg-navbar .nav-link {
+        padding: 0.75rem 1rem;
+      }
+    }
