@@ -42,7 +42,7 @@
 
     // Mã hoá mật khẩu trước khi lưu
     $hashedpassword = password_hash($password, PASSWORD_DEFAULT);
-    echo (strlen($hashedpassword));
+    (strlen($hashedpassword));
 
     // ===== 1. KIỂM TRA EMAIL HOẶC USERNAME ĐÃ TỒN TẠI CHƯA =====
     $stmt = $conn->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
