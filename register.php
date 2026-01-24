@@ -29,6 +29,7 @@
 <body>
 
   <?php
+  /** @var mysqli $conn */
   require_once 'dbcon.php'; // Kết nối CSDL
 
   // Kiểm tra xem request có phải POST không
