@@ -15,7 +15,7 @@
 <body>
   <?php
   session_start();
-
+  /** @var mysqli $conn */
   require_once 'dbcon.php';
 
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -44,7 +44,7 @@
         $stmt->fetch();
 
         //so sánh mật khẩu nhập vào (chưa MH) với mật khẩu của user lấy từ database(đã MH)
-        if (password_verify($password, $hashed_password)) {
+        if ($hashed_password !== null && password_verify($password, $hashed_password)) {
           // nếu đăng nhập thành công thì lưu thông tin đăng nhập vào session
           $_SESSION['user_id'] = $user_id;
           $_SESSION['user_name'] = $username;

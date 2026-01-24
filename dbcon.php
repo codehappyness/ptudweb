@@ -10,8 +10,9 @@ $dbpassword = "TG791508";
 $dbname = "ptudwebdb";
 
 $conn = mysqli_connect($servername, $dbuser, $dbpassword, $dbname);
+//$conn = new mysqli($servername, $dbuser, $dbpassword, $dbname);
 
-if(!$conn){
-  die('Connection failed'.mysqli_connect_error());
+if (!$conn) {
+  die('Connection failed' . mysqli_connect_error());
 }
 mysqli_set_charset($conn, 'utf8');
