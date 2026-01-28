@@ -105,7 +105,7 @@
 
         <div>
           <button type="submit" class="btn btn-primary">Register</button>
-          <a href="#" class="btn btn-info">Login</a>
+          <a href="login.php" class="btn btn-info">Login</a>
         </div>
       </form>
     </div>
