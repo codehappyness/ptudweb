@@ -5,8 +5,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $servername = "localhost";
-$dbuser = "root";
-$dbpassword = "TG791508";
+$dbuser = "ptudweb";
+$dbpassword = "MatkhauManh@123";
 $dbname = "ptudwebdb";
 
 $conn = mysqli_connect($servername, $dbuser, $dbpassword, $dbname);
