@@ -1,7 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer Bootstrap 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        footer {
+            background-color: #2c3e50; /* màu nền */
+            color: #ecf0f1;           /* màu chữ */
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        footer a {
+            color: #ecf0f1;
+        }
+        footer a:hover {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Nội dung trang -->
+<div class="container">
+    <h1>Nội dung trang</h1>
+    <p>Demo footer Bootstrap 3</p>
+</div>
+
+<!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
-
             <div class="col-sm-4">
                 <h4>Giới thiệu</h4>
                 <p>Trang tin tức tổng hợp</p>
@@ -31,6 +62,6 @@
         </div>
     </div>
 </footer>
-</body>
 
+</body>
 </html>

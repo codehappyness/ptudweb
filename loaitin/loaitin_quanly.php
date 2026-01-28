@@ -23,11 +23,10 @@ include '../template/nav.php';
 
     while ($row = mysqli_fetch_array($result)) {
     ?>
-
       <tr>
         <td><?php echo $row['maloai'] ?></td>
         <td><?php echo $row['tenloai'] ?></td>
-        <td><?php echo $row['trangthai'] === 1 ? "Bat" : "Tat" ?></td>
+        <td><?php echo $row['trangthai'] == 1 ? "Bat" : "Tat" ?></td>
         <td><a href="loaitin_sua.php?id=<?php echo $row['maloai'] ?>">Sua</a></th>
         <td><a href="loaitin_xoa.php?id=<?php echo $row['maloai'] ?>" onclick="return confirm('Ban co chac chan xoa khong');">Xoa</a></a>
       </tr>
