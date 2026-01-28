@@ -31,7 +31,7 @@ CREATE TABLE `users` (
   `type` enum('member','admin') NOT NULL,
   `date_created` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,8 @@ LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 set autocommit=0;
 INSERT INTO `users` VALUES
-(1,'Trung','$2y$12$p2W/aIYJ8dRqXpN9x3nzfe4Y34L5X6Picnomc5EInKZjonCNytKCK','tr@gmail.com','member','2025-12-06 00:46:39');
+(1,'Trung','$2y$12$p2W/aIYJ8dRqXpN9x3nzfe4Y34L5X6Picnomc5EInKZjonCNytKCK','tr@gmail.com','member','2025-12-06 00:46:39'),
+(2,'admin','$2y$12$oYC2Ccu1ocOAVpi1Vt6RQ.WQy6zpBKJk6U8OLPZAUsgcDQebPqePi','admin@gmail.com','member','2026-01-21 14:28:02');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
@@ -56,4 +57,4 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-01-07 10:37:20
+-- Dump completed on 2026-01-28 15:34:40
