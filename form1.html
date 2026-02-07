@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm / Sửa Tin Tức</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h3>TIN TỨC</h3>
+
+    <form class="form-horizontal" method="POST" action="save.php" enctype="multipart/form-data">
+
+        <!-- ID -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">ID:</label>
+            <div class="col-sm-10">
+                <input type="text" name="id" class="form-control" readonly>
+            </div>
+        </div>
+
+        <!-- Tiêu đề -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Tiêu đề:</label>
+            <div class="col-sm-10">
+                <input type="text" name="tieude" class="form-control" required>
+            </div>
+        </div>
+
+        <!-- Tóm tắt -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Tóm tắt:</label>
+            <div class="col-sm-10">
+                <textarea name="tomtat" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+
+        <!-- Nội dung -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Nội dung:</label>
+            <div class="col-sm-10">
+                <textarea name="noidung" class="form-control" rows="6"></textarea>
+            </div>
+        </div>
+
+        <!-- Hình ảnh -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Hình ảnh:</label>
+            <div class="col-sm-10">
+                <input type="file" name="hinhanh" class="form-control">
+            </div>
+        </div>
+
+        <!-- Ngày đăng -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Ngày đăng:</label>
+            <div class="col-sm-10">
+                <input type="datetime-local" name="ngaydang" class="form-control">
+            </div>
+        </div>
+
+        <!-- Tác giả -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Tác giả:</label>
+            <div class="col-sm-10">
+                <input type="text" name="tacgia" class="form-control">
+            </div>
+        </div>
+
+        <!-- Trạng thái -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Trạng thái:</label>
+            <div class="col-sm-10">
+                <label class="radio-inline">
+                    <input type="radio" name="trangthai" value="1" checked> Hiển thị
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="trangthai" value="0"> Ẩn
+                </label>
+            </div>
+        </div>
+
+        <!-- Loại tin -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Loại tin:</label>
+            <div class="col-sm-10">
+                <input type="number" name="id_loaitin" class="form-control">
+            </div>
+        </div>
+
+        <!-- Lượt xem -->
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Lượt xem:</label>
+            <div class="col-sm-10">
+                <input type="number" name="luotxem" class="form-control" value="0">
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Lưu</button>
+                <a href="index.php" class="btn btn-default">Quay lại</a>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm tin tức</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 class="text-center">Thêm / Cập nhật Tin Tức</h2>
+
+    <form action="save.php" method="POST" enctype="multipart/form-data">
+
+        <!-- Tiêu đề -->
+        <div class="form-group">
+            <label>Tiêu đề</label>
+            <input type="text" name="tieude" class="form-control" required>
+        </div>
+
+        <!-- Tóm tắt -->
+        <div class="form-group">
+            <label>Tóm tắt</label>
+            <textarea name="tomtat" class="form-control" rows="3"></textarea>
+        </div>
+
+        <!-- Nội dung -->
+        <div class="form-group">
+            <label>Nội dung</label>
+            <textarea name="noidung" class="form-control" rows="6"></textarea>
+        </div>
+
+        <!-- Hình ảnh -->
+        <div class="form-group">
+            <label>Hình ảnh</label>
+            <input type="file" name="hinhanh" class="form-control">
+        </div>
+
+        <!-- Ngày đăng -->
+        <div class="form-group">
+            <label>Ngày đăng</label>
+            <input type="datetime-local" name="ngaydang" class="form-control">
+        </div>
+
+        <!-- Tác giả -->
+        <div class="form-group">
+            <label>Tác giả</label>
+            <input type="text" name="tacgia" class="form-control">
+        </div>
+
+        <!-- Trạng thái -->
+        <div class="form-group">
+            <label>Trạng thái</label>
+            <select name="trangthai" class="form-control">
+                <option value="1">Hiển thị</option>
+                <option value="0">Ẩn</option>
+            </select>
+        </div>
+
+        <!-- Loại tin -->
+        <div class="form-group">
+            <label>Loại tin</label>
+            <input type="number" name="id_loaitin" class="form-control">
+            <!-- Sau này có thể đổi thành dropdown lấy từ DB -->
+        </div>
+
+        <!-- Lượt xem -->
+        <div class="form-group">
+            <label>Lượt xem</label>
+            <input type="number" name="luotxem" class="form-control" value="0">
+        </div>
+
+        <!-- Nút -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Lưu</button>
+            <a href="index.php" class="btn btn-default">Hủy</a>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
