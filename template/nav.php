@@ -16,8 +16,7 @@
 
       <!-- Left menu -->
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="../loaitin/loaitin_quanly.php">Loại tin tức</a></li>
+        <li class="active"><a href="../loaitin/loaitin_quanly.php">Loại tin tức</a></li>
         <li><a href="../tintuc/tintuc_quanly.php">Tin tức</a></li>
         <li><a href="../tintuc/tintuc_quanly.php">Người dùng</a></li>
       </ul>
@@ -31,8 +30,6 @@
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Profile</a></li>
-            <li class="divider"></li>
             <li><a href="../logout.php">Logout</a></li>
           </ul>
         </li>

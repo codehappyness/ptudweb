@@ -134,7 +134,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           <div class="form-group">
             <label class="col-sm-2 control-label">Tác giả:</label>
             <div class="col-sm-10">
-              <input type="text" name="tacgia" class="form-control">
+        <input type="text" name="tacgia" class="form-control" value="<?php echo $row['tacgia'] ?>">
             </div>
           </div>
 
@@ -155,10 +155,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <select name="id_loaitin" class="form-control">
 
                 <?php while ($loai = $resultLoai->fetch_assoc()) { ?>
-
                   <option value="<?= $loai['maloai'] ?>"
                     <?= ($loai['maloai'] == $row['id_loaitin']) ? 'selected' : '' ?>>
-
                     <?= $loai['tenloai'] ?>
 
                   </option>
@@ -173,14 +171,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label class="col-sm-2 control-label">Lượt xem:</label>
             <div class="col-sm-10">
               <input type="number" name="luotxem" class="form-control" value="0">
-            </div>
-          </div>
-
-          <!-- Buttons -->
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-primary">Lưu</button>
-              <a href="index.php" class="btn btn-default">Quay lại</a>
             </div>
           </div>
 

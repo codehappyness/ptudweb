@@ -36,6 +36,7 @@ include '../template/nav.php';
       <th>Tiêu đề</th>
       <th>Tóm tắt</th>
       <th>Trạng thái</th>
+      <th>Tác giả</th>
       <th>Hành động</th>
     </tr>
     <?php
@@ -47,6 +48,7 @@ include '../template/nav.php';
       <tr>
         <td><?php echo $row['tieude'] ?></td>
         <td><?php echo $row['tomtat'] ?></td>
+        <td><?php echo $row['tacgia'] ?></td>
         <td><?php echo $row['trangthai'] == 1 ? "Bật" : "Tắt" ?></td>
         <td>
           <a href="tintuc_sua.php?id=<?= $row['id'] ?>" class="btn btn-xs btn-primary">Sửa</a>

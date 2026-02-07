@@ -133,11 +133,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <div class="col-sm-10">
         <select name="id_loaitin" class="form-control">
           <?php while ($loai = $resultLoai->fetch_assoc()) { ?>
-            <option value="<?= $loai['maloai'] ?>"
+            <option value="<?= $loai['maloai'] ?>">
               <?= $loai['tenloai'] ?>
-              </option>
-            <?php } ?>
-
+            </option>
+          <?php } ?>
         </select>
       </div>
     </div>
